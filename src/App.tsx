@@ -5,7 +5,7 @@ import AsideBar from './components/AsideBar/AsideBar';
 import MainBar from './components/Main/MainBar';
 import type { RootState } from './store/store';
 import { Toaster, toast } from 'sonner';
-import { HelmetProvider } from 'react-helmet-async';
+// Using `react-helmet` instead of `react-helmet-async` for React 19 compatibility
 import SEO from './SEO';
 import { initGA, trackPageView } from './analytics'; // Import analytics
 
@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <HelmetProvider>
+    <>
       {/* SEO Component */}
       <SEO
         title={seoData.title}
@@ -67,6 +67,7 @@ function App() {
             {isToast &&
               toast.success('CV Downloaded Successfully!', { duration: 2000 })}
           </div>
+    
         </section>
 
         {/* Global Toaster */}
@@ -77,7 +78,7 @@ function App() {
           visibleToasts={1}
         />
       </section>
-    </HelmetProvider>
+    </>
   );
 }
 

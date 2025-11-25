@@ -14,56 +14,15 @@ interface DataProps {
 }
 
 const portfolioData: DataProps[] = [
-  {
-    id: 1,
-    name: 'Notes With Auth',
-    webLink: 'https://my-notes-app-2025.netlify.app/login',
-    avatar: '/firebaseAuth.png',
-    category: 'Web Design',
-  },
-  {
-    id: 2,
-    name: 'Take Tree',
-    webLink: 'https://pokemon-app-with-advance-2025.netlify.app/',
-    avatar: '/pokemon.png',
-    category: 'Frontend Development',
-  },
-  {
-    id: 3,
-    name: 'Bed Times App Stories',
-    webLink: 'https://bed-time-stories-2025.netlify.app/',
-    avatar: '/bed-time-story.png',
-    category: 'UI/UX',
-  },
-  {
-    id: 4,
-    name: 'Green Earth',
-    webLink: 'https://green-earth-app-2025.netlify.app/',
-    avatar: '/green-earth.png',
-    category: 'Web Development',
-  },
-  {
-    id: 5,
-    name: 'Book Manager',
-    webLink: 'https://book-maneger.netlify.app/',
-    avatar: '/book-manager.png',
-    category: 'Animation',
-  },
-  {
-    id: 6,
-    name: 'CS Service',
-    webLink: 'https://cs-service-002.netlify.app/',
-    avatar: '/cs-service.png',
-    category: 'Web Develop',
-  },
-  {
-    id: 7,
-    name: 'Tick Tack Toe',
-    webLink: 'https://game-s-ahmed.netlify.app/',
-    avatar: '/tick-tac-toe.png',
-    category: 'Game',
-  },
-];
+
+ {
+  id: 2,
+  name: 'E-Commerce Website',
+  webLink: 'https://paw-mart-ph.netlify.app/2',
+  avatar: '/paw-mart.png',
+  category: 'Web Design',
+},
+  ];
 
 const Portfolio = () => {
   // ✅ ADDED: Loading state

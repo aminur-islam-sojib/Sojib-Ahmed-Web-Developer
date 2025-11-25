@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "install:legacy": "npm install --legacy-peer-deps",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint src --ext .js,.jsx --fix",
     "format": "prettier --write ."
@@ -25,7 +26,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-ga4": "^2.1.0",
-    "react-helmet-async": "^2.0.5",
+    "react-helmet": "^6.1.0",
     "react-redux": "^9.2.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1"
@@ -35,6 +36,7 @@
     "@types/node": "^24.6.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
+    "@types/react-helmet": "^6.1.11",
     "@vitejs/plugin-react": "^5.0.3",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.36.0",
@@ -46,7 +48,6 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.18",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "~5.8.3",
