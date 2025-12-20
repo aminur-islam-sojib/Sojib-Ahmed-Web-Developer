@@ -20,20 +20,24 @@ function App() {
     trackPageView(window.location.pathname);
   }, []);
 
-  // SEO Data for SPA
+  // SEO Data for SPA - Updated for Full Stack Developer
   const seoData = {
-    title: 'Sojib Ahmed | Frontend Web Developer',
+    title:
+      'Sojib Ahmed - Full Stack Web Developer | React, Node.js & TypeScript Expert',
     description:
-      "Hi, I'm Sojib Ahmed — a passionate Frontend Web Developer from Natore, Bangladesh, specializing in React, JavaScript, TypeScript, and Tailwind CSS. I build modern, responsive, and user-friendly web applications. Explore my portfolio to see my latest projects and work.",
+      "I'm Sojib Ahmed, a passionate Full Stack Web Developer from Dhaka, Bangladesh. I specialize in React, Node.js, JavaScript, TypeScript, MongoDB, and Tailwind CSS, building modern, scalable, and user-friendly full-stack web applications. Explore my portfolio to see my latest projects and work.",
     image: 'https://sojib-ahmed.netlify.app/sojib-ahmed.dev.webp',
     url: 'https://sojib-ahmed.netlify.app',
     keywords:
-      'Sojib Ahmed, sojib-ahmed, Sojib Ahmed developer, web developer, frontend developer, frontend web developer, React developer, JavaScript developer, TypeScript developer, Tailwind CSS, web development, modern web apps, responsive design, UI developer, Bangladesh web developer, Natore developer, Rajshahi developer, portfolio, React portfolio, freelance developer, full stack developer',
+      'Sojib Ahmed, sojib-ahmed, Sojib Ahmed developer, Ahmed Sojib, full stack developer, full stack web developer, MERN stack developer, React developer, Node.js developer, JavaScript developer, TypeScript developer, MongoDB developer, Express.js developer, Tailwind CSS developer, web development, modern web apps, responsive design, full stack applications, Bangladesh web developer, Natore developer, Rajshahi developer, portfolio, full stack portfolio, freelance developer, Sojib Ahmed portfolio',
     socialLinks: [
-      'https://facebook.com/sojibahmed.dev',
-      'https://instagram.com/sojibahmed.dev',
+      'https://www.facebook.com/sojibahmed.connect',
+      'https://www.instagram.com/sojibahmed.dev',
       'https://github.com/aminur-islam-sojib',
-      'https://linkedin.com/in/ahmedsojib',
+      'https://www.linkedin.com/in/sojib-ahmed-ai',
+      'https://medium.com/@sojibahmed.dev',
+      'https://dev.to/sojibahmed',
+      'https://x.com/AminurSojib',
     ],
   };
 
@@ -67,7 +71,6 @@ function App() {
             {isToast &&
               toast.success('CV Downloaded Successfully!', { duration: 2000 })}
           </div>
-    
         </section>
 
         {/* Global Toaster */}
