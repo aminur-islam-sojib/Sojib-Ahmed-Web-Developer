@@ -1,19 +1,14 @@
-import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import './App.css';
 import AsideBar from './components/AsideBar/AsideBar';
 import MainBar from './components/Main/MainBar';
-import type { RootState } from './store/store';
-import { Toaster, toast } from 'sonner';
+
+import { Toaster } from 'sonner';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './SEO';
 import { initGA, trackPageView } from './analytics'; // Import analytics
 
 function App() {
-  const isToast = useSelector(
-    (state: RootState) => state.clickStateR.toastActive
-  );
-
   // Initialize Google Analytics on app load
   useEffect(() => {
     initGA();
@@ -61,21 +56,10 @@ function App() {
           <div className="col-span-4 lg:col-span-3">
             <MainBar />
           </div>
-
-          {/* Toast Notifications */}
-          <div className="z-50">
-            {isToast &&
-              toast.success('CV Downloaded Successfully!', { duration: 2000 })}
-          </div>
         </section>
 
         {/* Global Toaster */}
-        <Toaster
-          position="top-center"
-          richColors={true}
-          expand={false}
-          visibleToasts={1}
-        />
+        <Toaster position="top-center" richColors={true} />
       </section>
     </HelmetProvider>
   );

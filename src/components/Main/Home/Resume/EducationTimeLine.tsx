@@ -3,6 +3,11 @@ import { BookOpen } from 'lucide-react';
 
 const educations = [
   {
+    institution: 'UNIVERSITY OF SCHOLARS',
+    subject: 'BSc - Computer Science And Engineering',
+    session: '2025 - Ongoing',
+  },
+  {
     institution: 'SMMPLSC RAJSHAHI',
     subject: 'HSC - Science',
     session: '2023 - 2024',
@@ -12,12 +17,6 @@ const educations = [
     institution: 'NAZIRPUR HIGH SCHOOL, NATORE',
     subject: 'SSC - Science',
     session: '2021 - 2022',
-  },
-  {
-    id: 3,
-    institution: 'NAZIRPUR HIGH SCHOOL, NATORE',
-    subject: 'JSC - Science',
-    session: '2019 - 2020',
   },
 ];
 

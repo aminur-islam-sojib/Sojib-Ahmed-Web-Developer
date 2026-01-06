@@ -1,8 +1,7 @@
 // Navbar.tsx
 import { motion } from 'motion/react';
-import { useState, type Dispatch, type SetStateAction } from 'react';
-import { useDispatch } from 'react-redux';
-import { setToastActive } from '../../store/ClickStateSlice';
+import { type Dispatch, type SetStateAction } from 'react';
+import { toast } from 'sonner';
 
 interface NavbarProps {
   activeTab: string;
@@ -11,26 +10,24 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const navLinks = ['about', 'resume', 'portfolio', 'contact', 'download cv'];
-  const [toast, setToast] = useState<boolean>(false);
-  const dispatch = useDispatch();
-  dispatch(setToastActive(toast));
 
   const handleTabClick = (tab: string) => {
     if (tab === 'download cv') {
       // Create a temporary link element
-      const link = document.createElement('a');
-      link.href = '/cv.pdf'; // Path to your file in public folder
-      link.download = 'Sojib Ahmed - CV.pdf'; // Name of downloaded file
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      setToast(true);
+      try {
+        const link = document.createElement('a');
+        link.href = '/cv.pdf'; // Path to your file in public folder
+        link.download = 'Sojib Ahmed - CV.pdf'; // Name of downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        toast.success('CV Download Successfully!');
+      } catch (error) {
+        toast.error(`Something Went Wrong, ${JSON.stringify(error)}`);
+      }
     } else {
       setActiveTab(tab);
     }
-    setTimeout(() => {
-      setToast(false);
-    }, 2000);
   };
 
   return (

@@ -1,4 +1,4 @@
-import { Palette, Code2, Smartphone, Brush } from 'lucide-react';
+import { Palette, Code2 } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const servicesData = [
@@ -14,20 +14,6 @@ const servicesData = [
     title: 'Web Development',
     description: 'High-quality development of sites at the professional level.',
     icon: Code2,
-  },
-  {
-    id: 3,
-    title: 'Mobile Apps',
-    description:
-      'Professional development of applications for iOS and Android.',
-    icon: Smartphone,
-  },
-  {
-    id: 4,
-    title: 'Graphics Design',
-    description:
-      'The most modern and high-quality design made at a professional level.',
-    icon: Brush,
   },
 ];
 

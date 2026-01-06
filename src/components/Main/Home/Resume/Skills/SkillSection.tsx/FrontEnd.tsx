@@ -2,12 +2,11 @@ import { FolderCode } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const frontendSkills = [
-  { id: 103, name: 'JavaScript', percentage: 80 },
   { id: 104, name: 'React', percentage: 75 },
+  { id: 107, name: 'NextJS', percentage: 75 },
   { id: 105, name: 'TypeScript', percentage: 70 },
+  { id: 103, name: 'JavaScript', percentage: 80 },
   { id: 106, name: 'Tailwind CSS', percentage: 80 },
-  { id: 109, name: 'Redux', percentage: 65 },
-  { id: 112, name: 'Responsive Design', percentage: 85 },
 ];
 
 const FrontEnd = () => {

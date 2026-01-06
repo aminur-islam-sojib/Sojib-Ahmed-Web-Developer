@@ -5,8 +5,6 @@ import { BrainCircuit } from 'lucide-react';
 const BackEnd = lazy(() => import('./SkillSection.tsx/BackEnd'));
 const FrontEnd = lazy(() => import('./SkillSection.tsx/FrontEnd'));
 const SoftSkills = lazy(() => import('./SkillSection.tsx/SoftSkills'));
-const DesignTools = lazy(() => import('./SkillSection.tsx/DesignTools'));
-const ToolsAndOthers = lazy(() => import('./SkillSection.tsx/ToolsAndOthers'));
 const VersionControls = lazy(
   () => import('./SkillSection.tsx/VersionControls')
 );
@@ -15,8 +13,8 @@ const datas = [
   { id: 1, components: FrontEnd },
   { id: 2, components: BackEnd },
   { id: 3, components: VersionControls },
-  { id: 3, components: DesignTools },
-  { id: 3, components: ToolsAndOthers },
+  // { id: 3, components: DesignTools },
+  // { id: 3, components: ToolsAndOthers },
   { id: 3, components: SoftSkills },
 ];
 

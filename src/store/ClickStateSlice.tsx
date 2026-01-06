@@ -17,12 +17,8 @@ const clickStateSlice = createSlice({
     setClickState: (state, action: PayloadAction<boolean>) => {
       state.clickState = action.payload;
     },
-    setToastActive: (state, action) => {
-      console.log(action.payload);
-      state.toastActive = action.payload;
-    },
   },
 });
 
-export const { setClickState, setToastActive } = clickStateSlice.actions;
+export const { setClickState } = clickStateSlice.actions;
 export default clickStateSlice.reducer;

@@ -2,9 +2,9 @@ import { DatabaseZap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const backendSkills = [
-  { id: 201, name: 'Node.js', percentage: 70 },
-  { id: 202, name: 'Firebase', percentage: 65 },
-  { id: 203, name: 'Appwrite', percentage: 60 },
+  { id: 205, name: 'MongoDB', percentage: 80 },
+  { id: 204, name: 'Node.js', percentage: 85 },
+  { id: 203, name: 'ExpressJS', percentage: 85 },
 ];
 
 const BackEnd = () => {

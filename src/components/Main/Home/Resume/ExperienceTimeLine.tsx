@@ -4,9 +4,9 @@ import { BriefcaseBusiness } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    company: 'Dev Ops',
-    role: 'Junior Developer',
-    duration: '2025 — Present',
+    company: 'Junior Full-Stack Developer',
+    role: ' Freelance / Personal',
+    duration: '2024 — Present',
   },
 ];
 

@@ -12,7 +12,7 @@ const userData: userDataType[] = [
   {
     id: 1,
     title: 'EMAIL',
-    value: 'mdaminurislamsojib2006@gmail.com',
+    value: 'sojibahmed.connect@gmail.com',
     icon: 'Mail',
   },
   {
@@ -31,7 +31,7 @@ const userData: userDataType[] = [
   {
     id: 4,
     title: 'LOCATION',
-    value: 'Natore Bangladesh',
+    value: 'Dhaka, Bangladesh',
     icon: 'LocationEditIcon',
   },
 ];
