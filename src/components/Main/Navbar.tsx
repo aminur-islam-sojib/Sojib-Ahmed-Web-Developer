@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { type Dispatch, type SetStateAction } from 'react';
 import { toast } from 'sonner';
 
+import { ExternalLink } from 'lucide-react';
+
 interface NavbarProps {
   activeTab: string;
   setActiveTab: Dispatch<SetStateAction<string>>;
@@ -37,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
       transition={{ duration: 1 }}
       className="w-full lg:w-auto flex justify-center lg:justify-end py-3 md:py-5 p-1 md:px-4 rounded-tr-xl rounded-tl-xl sm:rounded-tr-3xl sm:rounded-tl-3xl lg:px-10 lg:rounded-tl-none bg-[#2b2b2cbf] backdrop-blur-[5px] border-t-[1px] lg:border-[1px] border-[#383838] lg:rounded-tr-2xl lg:rounded-bl-2xl"
     >
-      <div className="flex gap-2 sm:gap-3 lg:gap-5 flex-wrap justify-center lg:flex-nowrap">
+      <div className="flex gap-2 sm:gap-3 lg:gap-5 flex-wrap justify-center lg:flex-nowrap items-center">
         {navLinks.map((tab, index) => (
           <button
             key={index}
@@ -72,6 +74,16 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             </motion.span>
           </button>
         ))}
+
+        <a
+          href="https://sojibahmed.vercel.app/"
+          target="_blank"
+          rel="noopener"
+          className="relative text-[13px] lg:text-[15px] cursor-pointer font-medium text-primary hover:text-primary/80 transition-colors duration-300 ease-in-out whitespace-nowrap flex items-center gap-1"
+        >
+          <span>New Portfolio</span>
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
       </div>
     </motion.nav>
   );

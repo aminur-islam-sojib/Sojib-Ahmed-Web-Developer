@@ -8,6 +8,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import SEO from './SEO';
 import { initGA, trackPageView } from './analytics'; // Import analytics
 
+import NewPortfolioNotice from './components/NewPortfolioNotice';
+
 function App() {
   // Initialize Google Analytics on app load
   useEffect(() => {
@@ -57,6 +59,8 @@ function App() {
             <MainBar />
           </div>
         </section>
+
+        <NewPortfolioNotice />
 
         {/* Global Toaster */}
         <Toaster position="top-center" richColors={true} />
